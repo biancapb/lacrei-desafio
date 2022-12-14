@@ -5,7 +5,9 @@ const Tabs = (): JSX.Element => {
     <>
       <Container>
         <TabItem>
-          <TabText href="/">Home</TabText>
+          <TabText active href="/">
+            Home
+          </TabText>
 
           <TabText href="/usuario">Pessoa Usuária</TabText>
 

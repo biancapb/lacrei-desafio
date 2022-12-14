@@ -9,15 +9,18 @@ export const Container = styled.div`
   flex-direction: row;
 `;
 
-export const TabItem = styled.nav``;
+export const TabItem = styled.nav`
+  display: flex;
+  gap: 40px;
+`;
 
 export const TabText = styled.a<TabProps>`
-  color: ${(props) => (props.active ? "red" : "green")};
+  color: ${(props) => (props.active ? "green" : "black")};
   text-decoration: none;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  padding: 20px;
+  line-height: 22px;
 
   &:hover {
     opacity: 0.5;
