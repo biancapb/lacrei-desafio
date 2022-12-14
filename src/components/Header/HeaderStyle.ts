@@ -6,6 +6,11 @@ export const Container = styled.div`
   display: flex;
   height: 60px;
   width: auto;
+  justify-content: space-between;
+`;
+
+export const TabsContainer = styled.div`
+  margin-right: 60px;
 `;
 
 export const Title = styled.a`
