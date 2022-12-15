@@ -1,6 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 64px 64px 0;
+  gap: 30px;
+`;
+
+export const ContainerButton = styled.div`
+  display: flex;
+  gap: 70px;
+`;
+
+export const ContainerTitle = styled.div`
   width: 500px;
   height: 500px;
   display: flex;
