@@ -6,8 +6,6 @@ const Footer = (): JSX.Element => {
     <>
       <Divider></Divider>
 
-      <Text>Desafio Front-end Lacrei</Text>
-
       <Tabs></Tabs>
 
       <Container>
@@ -26,6 +24,8 @@ const Footer = (): JSX.Element => {
           socialType={"linkedin"}
         />
       </Container>
+
+      <Text>Desafio Front-end Lacrei</Text>
     </>
   );
 };

@@ -23,6 +23,7 @@ export const TabText = styled.a<TabProps>`
   line-height: 22px;
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.6;
+    transition-duration: 0.5s;
   }
 `;
