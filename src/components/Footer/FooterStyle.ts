@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
 export const Text = styled.span`
   color: #515151;
   font-family: "Nunito", sans-serif;
