@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Container, TabText, TabItem } from "./TabsStyle";
 
 const Tabs = (): JSX.Element => {
@@ -5,13 +6,17 @@ const Tabs = (): JSX.Element => {
     <>
       <Container>
         <TabItem>
-          <TabText active href="/">
-            Home
+          <TabText active>
+            <Link to="/">Home</Link>
           </TabText>
 
-          <TabText href="/usuario">Pessoa Usuária</TabText>
+          <TabText>
+            <Link to="/user">Pessoa Usuária</Link>
+          </TabText>
 
-          <TabText href="/profissional">Profissional</TabText>
+          <TabText>
+            <Link to="/professional">Profissional</Link>
+          </TabText>
         </TabItem>
       </Container>
     </>

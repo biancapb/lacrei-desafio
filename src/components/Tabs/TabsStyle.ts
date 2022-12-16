@@ -15,15 +15,17 @@ export const TabItem = styled.nav`
 `;
 
 export const TabText = styled.a<TabProps>`
-  color: ${(props) => (props.active ? "green" : "black")};
-  text-decoration: none;
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 22px;
-
   &:hover {
     opacity: 0.6;
     transition-duration: 0.5s;
+  }
+
+  a {
+    color: ${(props) => (props.active ? "green" : "black")};
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
   }
 `;

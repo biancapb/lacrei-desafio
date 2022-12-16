@@ -5,7 +5,6 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding: 64px 64px 0;
-  gap: 30px;
 `;
 
 export const ContainerButton = styled.div`
@@ -17,9 +16,8 @@ export const ContainerTitle = styled.div`
   width: 500px;
   height: 500px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  gap: 30px;
+  gap: 48px;
 `;
 
 export const Title = styled.h2`

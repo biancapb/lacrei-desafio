@@ -12,9 +12,15 @@ import {
 interface LayoutProps {
   textTitle: string;
   textSubtitle: string;
+
+  imageType: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ textTitle, textSubtitle }) => {
+const Layout: React.FC<LayoutProps> = ({
+  imageType,
+  textTitle,
+  textSubtitle,
+}) => {
   return (
     <Container>
       <ContainerTitle>
@@ -28,7 +34,7 @@ const Layout: React.FC<LayoutProps> = ({ textTitle, textSubtitle }) => {
         </ContainerButton>
       </ContainerTitle>
 
-      <ImageLayout imageType="home" />
+      <ImageLayout imageType={imageType} />
     </Container>
   );
 };
