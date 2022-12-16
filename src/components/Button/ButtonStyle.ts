@@ -11,13 +11,6 @@ export const Container = styled.a<ButtonProps>`
   height: 48px;
   width: 192px;
 
-  color: ${(props) => (props.buttonType === "primary" ? "#ffffff" : "#018762")};
-  text-decoration: none;
-  font-family: "Nunito", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-
   background-color: ${(props) =>
     props.buttonType === "primary" ? "#018762" : "#ffffff"};
   border: 1px solid #018762;
@@ -29,5 +22,15 @@ export const Container = styled.a<ButtonProps>`
   &:hover {
     opacity: 0.8;
     transition-duration: 0.5s;
+  }
+
+  a {
+    color: ${(props) =>
+      props.buttonType === "primary" ? "#ffffff" : "#018762"};
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
   }
 `;

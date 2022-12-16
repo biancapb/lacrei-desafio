@@ -12,7 +12,7 @@ function User() {
         textSubtitle={
           "Buscamos recrutar pessoas profissionais da saúde que entendam as necessidades e se comprometam com o bem-estar da comunidade LGBTQIAPN+."
         }
-        imageType={"pro"}
+        type={"pro"}
       />
       <Footer />
     </>

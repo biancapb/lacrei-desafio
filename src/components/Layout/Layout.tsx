@@ -10,14 +10,15 @@ import {
 } from "./LayoutStyle";
 
 interface LayoutProps {
+  isHome?: boolean;
   textTitle: string;
   textSubtitle: string;
-
-  imageType: string;
+  type: string;
 }
 
 const Layout: React.FC<LayoutProps> = ({
-  imageType,
+  isHome,
+  type,
   textTitle,
   textSubtitle,
 }) => {
@@ -25,16 +26,26 @@ const Layout: React.FC<LayoutProps> = ({
     <Container>
       <ContainerTitle>
         <Title>{textTitle}</Title>
-        <Subtitle>{textSubtitle}</Subtitle>
+        <Subtitle isHome={isHome}>{textSubtitle}</Subtitle>
 
-        <ContainerButton>
-          <Button buttonType="primary" textButton="Pessoa Usuária" />
+        {isHome && (
+          <ContainerButton>
+            <Button
+              buttonType="primary"
+              textButton="Pessoa Usuária"
+              route="/user"
+            />
 
-          <Button buttonType="secondary" textButton="Profissional" />
-        </ContainerButton>
+            <Button
+              buttonType="secondary"
+              textButton="Profissional"
+              route="/professional"
+            />
+          </ContainerButton>
+        )}
       </ContainerTitle>
 
-      <ImageLayout imageType={imageType} />
+      <ImageLayout imageType={type} />
     </Container>
   );
 };

@@ -8,11 +8,12 @@ function Home() {
     <>
       <Header />
       <Layout
+        isHome
         textTitle={"Boas vindas a Lacrei Saúde"}
         textSubtitle={
           "Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+"
         }
-        imageType="home"
+        type="home"
       />
       <Footer />
     </>
