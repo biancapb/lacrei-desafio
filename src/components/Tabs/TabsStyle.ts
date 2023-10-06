@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 interface TabProps {
   active?: boolean;
+  isFooter?: boolean;
 }
 
 export const Container = styled.div`
@@ -25,7 +26,7 @@ export const TabText = styled.a<TabProps>`
     text-decoration: none;
     font-family: "Nunito", sans-serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: ${(props) => (props.active ? "bold" : "normal")};
     line-height: 22px;
   }
 `;

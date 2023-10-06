@@ -7,7 +7,7 @@ const Footer = (): JSX.Element => {
       <Container>
         <Divider></Divider>
 
-        <Tabs></Tabs>
+        <Tabs isFooter></Tabs>
 
         <ContainerSocialMedia>
           <SocialMedia
